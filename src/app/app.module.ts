@@ -10,6 +10,9 @@ import { InicioComponent } from './inicio/inicio.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
+// Servicios
+import { EquipoService } from './services/equipo.service';
+
 const rutas: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'nosotros', component: NosotrosComponent },
@@ -34,7 +37,9 @@ const rutas: Routes = [
     BrowserModule,
     RouterModule.forRoot(rutas)
   ],
-  providers: [],
+  providers: [
+    EquipoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

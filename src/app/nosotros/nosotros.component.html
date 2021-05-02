@@ -1,7 +1,11 @@
 <div class="mt-5">
     <h2>NOSOTROS</h2>
     <h4>Te contamos sobre nuestro equipo</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, non minus consequatur, pariatur consequuntur
-        fugiat excepturi autem unde, accusamus eveniet quidem. Deserunt atque magni excepturi quo dolor quaerat
-        voluptatum dolore.</p>
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let item of equipo">
+            <h6>Nombre: {{item.nombre}}</h6>
+            <h6>Cargo: {{item.cargo}}</h6>
+            <a href="#">Leer más...</a>
+        </li>
+    </ul>
 </div>
